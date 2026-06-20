@@ -1,27 +1,106 @@
+* 1. إعدادات عامة للموقع وتغيير الخط */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #f4f7f6;
+    background-color: #f8fafc; /* خلفية مريحة للعين */
+    color: #334155; /* لون خط رمادي داكن مريح للقراءة */
+    line-height: 1.8;
     padding: 20px;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.my-btn {
-    background-color: #007bff;
+/* 2. تنسيق الهيدر (الجزء التعريفي الأول) */
+header {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* تدرج ألوان أزرق احترافي */
     color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.my-btn:hover {
-    background-color: #0056b3;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* تنسيق زرار "وظفني" */
+header a {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #1e3a8a;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+header a:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+/* 3. تنسيق الأقسام (Sections) */
+section {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* لتوسيط المحتوى في نص الشاشة */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    border: 1px solid #e2e8f0;
+}
+
+section h2 {
+    color: #1e3a8a;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* تنسيق القوائم (المهارات والخدمات) */
+ul {
+    list-style-type: none; /* إخفاء النقاط التقليدية */
+}
+
+ul li {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 12px;
+}
+
+/* إضافة علامة شيك بدل النقطة العادية */
+ul li::before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: #10b981; /* لون أخضر جميل للعلامة */
+    font-weight: bold;
+}
+
+/* تنسيق كروت المشاريع */
+div {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-right: 5px solid #3b82f6; /* خط أزرق على اليمين يدي شكل جمالي */
+    margin-top: 15px;
+}
+
+/* 4. إخفاء الخطوط الأفقية القديمة لأن الأقسام بقت منفصلة ومنظمة */
+hr {
+    display: none;
 }
